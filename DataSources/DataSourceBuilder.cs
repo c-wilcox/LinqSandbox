@@ -14,9 +14,10 @@ namespace DataSources
             {
                 var item = new TestDataItem
                 {
-                    DataItemId = i
+                    DataItemId = i,
+                    FirstName = "Fred" + i,
                 };
-
+                
                 items.Add(item);
             }
 
@@ -27,5 +28,6 @@ namespace DataSources
     public class TestDataItem
     {
         public int DataItemId { get; set; }
+        public string FirstName { get; set; }
     }
 }

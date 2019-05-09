@@ -9,6 +9,13 @@ namespace MainConsole
     {
         static void Main(string[] args)
         {
+
+            DoTheBigFinish();
+        }
+
+        private static void DoTheBigFinish()
+        {
+            Console.WriteLine("Hit enter to exit...");            
             Console.ReadLine();
         }
     }

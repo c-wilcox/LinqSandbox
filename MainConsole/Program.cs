@@ -10,31 +10,45 @@ namespace MainConsole
         {
             DoTheBigStart();
 
+            IDataSurfacer surfacer;
+            
             switch (GetExerciseNumber())
             {
                 case 1:
-                    var ex1 = new Exercise1();
-                    ex1.Execute();
+                    surfacer = new StraightList();
                     break;
                 
                 default:
                     Console.WriteLine("Go Pound!");
-                    break;
+                    throw new Exception("Invalid Option!");
             }
 
+            surfacer.SurfaceData();
+            
             DoTheBigFinish();
         }
 
+        
         private static int GetExerciseNumber()
         {
-            return 1;
+            int optionNumber = 0;
+
+            while (optionNumber < 1 || optionNumber > 1)
+            {
+                //Get option from user
+                optionNumber = 1;
+            }
+            
+            return optionNumber;
         }
 
+        
         private static void DoTheBigStart() 
         {
             Console.WriteLine("Program Started...\r\n");
         }
 
+        
         private static void DoTheBigFinish()
         {
             Console.WriteLine("\r\nHit enter to exit...");            

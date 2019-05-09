@@ -6,9 +6,9 @@ using DataSources;
 
 namespace LinqExercises
 {
-    public class Exercise1
+    public class StraightList : IDataSurfacer
     {
-        public void Execute()
+        public void SurfaceData()
         {
             IEnumerable<JobProspect> dataSource = DataSourceBuilder.GetTestDataItems();
             var query = from item in dataSource

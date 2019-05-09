@@ -6,16 +6,16 @@ namespace DataSources
 {
     public static class DataSourceBuilder
     {
-        public static IEnumerable<TestDataItem> GetTestDataItems()
+        public static IEnumerable<JobProspect> GetTestDataItems()
         {
-            var items = new List<TestDataItem>();
+            var items = new List<JobProspect>();
 
             for (int i = 1; i < 2000; i++)
             {
-                var item = new TestDataItem
+                var item = new JobProspect
                 {
-                    DataItemId = i,
-                    FirstName = "Fred" + i,
+                    ProspectId = i,
+                    CompanyName = "Fred" + i,
                 };
                 
                 items.Add(item);
@@ -23,11 +23,5 @@ namespace DataSources
 
             return items;
         }
-    }
-
-    public class TestDataItem
-    {
-        public int DataItemId { get; set; }
-        public string FirstName { get; set; }
     }
 }

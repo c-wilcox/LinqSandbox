@@ -9,11 +9,25 @@ namespace MainConsole
         static void Main(string[] args)
         {
             DoTheBigStart();
-            
-            var ex1 = new Exercise1();
-            ex1.Execute();
-            
+
+            switch (GetExerciseNumber())
+            {
+                case 1:
+                    var ex1 = new Exercise1();
+                    ex1.Execute();
+                    break;
+                
+                default:
+                    Console.WriteLine("Go Pound!");
+                    break;
+            }
+
             DoTheBigFinish();
+        }
+
+        private static int GetExerciseNumber()
+        {
+            return 1;
         }
 
         private static void DoTheBigStart() 

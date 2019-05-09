@@ -10,15 +10,15 @@ namespace LinqExercises
     {
         public void Execute()
         {
-            IEnumerable<TestDataItem> dataSource = DataSourceBuilder.GetTestDataItems();
+            IEnumerable<JobProspect> dataSource = DataSourceBuilder.GetTestDataItems();
             var query = from item in dataSource
-                where item.DataItemId == 50
-                orderby item.DataItemId descending
+                where item.ProspectId == 50
+                orderby item.ProspectId descending
                 select item;
 
-            foreach (TestDataItem item in query)
+            foreach (JobProspect item in query)
             {
-                Console.WriteLine($"{item.FirstName}");
+                Console.WriteLine($"{item.CompanyName}");
             }
         }
     }

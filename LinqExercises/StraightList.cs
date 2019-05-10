@@ -10,15 +10,13 @@ namespace LinqExercises
     {
         public void SurfaceData()
         {
-            IEnumerable<JobProspect> dataSource = DataSourceBuilder.GetTestDataItems();
-            var query = from item in dataSource
-                where item.ProspectId == 50
-                orderby item.ProspectId descending
-                select item;
+            IEnumerable<JobProspect> prospects = DataSourceBuilder.GetProspectDataGetTestDataItems();
+            var query = from prospect in prospects
+                select prospect;
 
             foreach (JobProspect item in query)
             {
-                Console.WriteLine($"{item.CompanyName}");
+                Console.WriteLine(item);
             }
         }
     }

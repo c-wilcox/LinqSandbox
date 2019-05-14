@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using DataSources;
 using LinqExercises;
 
 
@@ -6,49 +8,58 @@ namespace MainConsole
 {
     class Program
     {
-        static void Main(string[] args)
+
+        static void Main()
         {
-            DoTheBigStart();
 
-            IDataSurfacer surfacer;
-            
-            switch (GetExerciseNumber())
+            var loader = new JsonLoader();
+
+            Console.WriteLine("Recruiters\r\n==============");
+            List<Recruiter> recruiters = loader.ReadRecruiterFile();
+            foreach (Recruiter recruiter in recruiters)
             {
-                case 1:
-                    surfacer = new StraightList();
-                    break;
-                
-                default:
-                    Console.WriteLine("Go Pound!");
-                    throw new Exception("Invalid Option!");
+                Console.WriteLine($"Co Short Name:{recruiter.CompanyShortName}");
             }
+            Console.WriteLine("\r\n");
 
-            surfacer.SurfaceData();
-            
+            Console.WriteLine("Agents\r\n==============");
+            List<RecruiterAgent> recruiterAgents = loader.ReadRecruiterAgentFile();
+            foreach (RecruiterAgent recruiterAgent in recruiterAgents)
+            {
+                Console.WriteLine($"Co Short Name:{recruiterAgent.CompanyShortName}");
+            }
+            Console.WriteLine("\r\n");
+
+
+            Console.WriteLine("Recruiter Interactions\r\n==============");
+            List<RecruiterInteraction> recruiterInteractions = loader.ReadRecruiterInteractionFile();
+            foreach (RecruiterInteraction recruiterInteraction in recruiterInteractions)
+            {
+                Console.WriteLine($"Co Short Name:{recruiterInteraction.CompanyShortName}");
+            }
+            Console.WriteLine("\r\n");
+
+
+            Console.WriteLine("Prospects\r\n==============");
+            List<ProspectiveEmployer> prospectiveEmployers = loader.ReadProspectFile();
+            foreach (ProspectiveEmployer prospectiveEmployer in prospectiveEmployers)
+            {
+                Console.WriteLine($"Co Short Name:{prospectiveEmployer.CompanyShortName}");
+            }
+            Console.WriteLine("\r\n");
+
+
+            Console.WriteLine("ProspectInteractions\r\n==============");
+            List<ProspectiveEmployerInteraction> prospectiveEmployerInteractions = loader.ReadProspectInteractionFile();
+            foreach (ProspectiveEmployerInteraction prospectiveEmployerInteraction in prospectiveEmployerInteractions)
+            {
+                Console.WriteLine($"Co Short Name:{prospectiveEmployerInteraction.CompanyShortName}");
+            }
+            Console.WriteLine("\r\n");
+
             DoTheBigFinish();
         }
 
-        
-        private static int GetExerciseNumber()
-        {
-            int optionNumber = 0;
-
-            while (optionNumber < 1 || optionNumber > 1)
-            {
-                //Get option from user
-                optionNumber = 1;
-            }
-            
-            return optionNumber;
-        }
-
-        
-        private static void DoTheBigStart() 
-        {
-            Console.WriteLine("Program Started...\r\n");
-        }
-
-        
         private static void DoTheBigFinish()
         {
             Console.WriteLine("\r\nHit enter to exit...");            

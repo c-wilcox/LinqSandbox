@@ -1,0 +1,12 @@
+﻿// All Future and Past Interactions with Prospective Employers.
+// Including, but not limited to, Phone Screens and F2F Interviews
+
+[
+    {
+        "companyShortName": "BankMobile",
+        "appointmentDate": "5-15-2019",
+        "appointmentTime": "10:00am",
+        "status": "pending",
+        "notes": ""
+    }
+]

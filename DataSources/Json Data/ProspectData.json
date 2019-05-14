@@ -1,0 +1,20 @@
+﻿// Prospective employer data
+// Name, Address, Web Address, Main Phone etc.
+[
+    {
+        "companyShortName": "CTDI"
+    },
+    {
+        "companyShortName": "BankMobile",
+        "companyLongName": "BankMobile",
+        "contacts": [
+            {
+                "name": "Niko Zurita",
+                "email": "",
+                "phone": "", 
+                "linkedInProfile": "https://www.linkedin.com/in/nickolasezurita/"
+            }
+        ], 
+        "web": " https://www.bankmobile.com/"
+    }
+]

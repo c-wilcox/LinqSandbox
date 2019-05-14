@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using DataSources;
-using LinqExercises;
 
 
 namespace MainConsole
@@ -14,50 +14,60 @@ namespace MainConsole
 
             var loader = new JsonLoader();
 
-            Console.WriteLine("Recruiters\r\n==============");
-            List<Recruiter> recruiters = loader.ReadRecruiterFile();
-            foreach (Recruiter recruiter in recruiters)
-            {
-                Console.WriteLine($"Co Short Name:{recruiter.CompanyShortName}");
-            }
-            Console.WriteLine("\r\n");
+            WriteTitle("Recruiters");
+            IEnumerable<string> recruiters = loader.ReadRecruiterFile().Select(r => $"Co Short Name: {r.CompanyShortName}");
 
-            Console.WriteLine("Agents\r\n==============");
-            List<RecruiterAgent> recruiterAgents = loader.ReadRecruiterAgentFile();
-            foreach (RecruiterAgent recruiterAgent in recruiterAgents)
-            {
-                Console.WriteLine($"Co Short Name:{recruiterAgent.CompanyShortName}");
-            }
-            Console.WriteLine("\r\n");
+            foreach (string recruiter in recruiters)
+                Console.WriteLine(recruiter);
+
+            WriteBreak();
 
 
-            Console.WriteLine("Recruiter Interactions\r\n==============");
-            List<RecruiterInteraction> recruiterInteractions = loader.ReadRecruiterInteractionFile();
-            foreach (RecruiterInteraction recruiterInteraction in recruiterInteractions)
-            {
-                Console.WriteLine($"Co Short Name:{recruiterInteraction.CompanyShortName}");
-            }
-            Console.WriteLine("\r\n");
+            WriteTitle("Agents");
+            IEnumerable<string> agents = loader.ReadRecruiterAgentFile().Select(a => $"Co Short Name: {a.CompanyShortName}");
+
+            foreach (string agent in agents)
+                Console.WriteLine(agent);
+            WriteBreak();
 
 
-            Console.WriteLine("Prospects\r\n==============");
-            List<ProspectiveEmployer> prospectiveEmployers = loader.ReadProspectFile();
-            foreach (ProspectiveEmployer prospectiveEmployer in prospectiveEmployers)
-            {
-                Console.WriteLine($"Co Short Name:{prospectiveEmployer.CompanyShortName}");
-            }
-            Console.WriteLine("\r\n");
+            WriteTitle("Recruiter Interactions");
+            IEnumerable<string> recInteractions = loader.ReadRecruiterInteractionFile().Select(ra => $"Co Short Name: {ra.CompanyShortName}");
+
+            foreach (string recInteraction in recInteractions)
+                Console.WriteLine(recInteraction);
+
+            WriteBreak();
 
 
-            Console.WriteLine("ProspectInteractions\r\n==============");
-            List<ProspectiveEmployerInteraction> prospectiveEmployerInteractions = loader.ReadProspectInteractionFile();
-            foreach (ProspectiveEmployerInteraction prospectiveEmployerInteraction in prospectiveEmployerInteractions)
-            {
-                Console.WriteLine($"Co Short Name:{prospectiveEmployerInteraction.CompanyShortName}");
-            }
-            Console.WriteLine("\r\n");
+            WriteTitle("Prospects");
+            IEnumerable<string> prospects = loader.ReadProspectFile().Select(p => $"Co Short Name: {p.CompanyShortName}");
+
+            foreach (string prospect in prospects)
+                Console.WriteLine(prospect);
+
+            WriteBreak();
+
+
+            WriteTitle("ProspectInteractions");
+            IEnumerable<string> prospectInteractions = loader.ReadProspectInteractionFile().Select(pi => $"Co Short Name: {pi.CompanyShortName}");
+
+            foreach (string prospectInteraction in prospectInteractions)
+                Console.WriteLine(prospectInteraction);
+
+            WriteBreak();
 
             DoTheBigFinish();
+        }
+
+        private static void WriteTitle(string title)
+        {
+            Console.WriteLine($"{title}\r\n==============");
+        }
+
+        private static void WriteBreak()
+        {
+            Console.WriteLine("\r\n");
         }
 
         private static void DoTheBigFinish()

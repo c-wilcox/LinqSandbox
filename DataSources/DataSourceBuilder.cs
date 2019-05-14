@@ -40,6 +40,23 @@ namespace DataSources
             };
             items.Add(item);
    
+            item = new JobProspect()
+            {
+                ProspectId = prospectId++,
+                CompanyName = "",
+                RecruiterName = "",
+                RecruiterEmail = "",
+                RecruiterOrgName = "",
+                RecruiterPhone = "",
+                ProspectTown = "",
+                RecruiterWebSite = "",
+                ProspectWebSite = "",
+                InitiationDate = "",
+                ProspectContactNames = "",
+                
+            };
+            items.Add(item);
+   
             return items;
         }
     }

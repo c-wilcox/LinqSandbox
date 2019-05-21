@@ -1,0 +1,167 @@
+﻿// Individual Recruiter Agents
+// Name, e-mail, phone# etc.
+[
+    {
+        "companyShortName": "MissionStaff",
+        "agentName": "Christian Bet",
+        "firstName": "Christian",
+        "lastName": "Bet",
+        "title": "Senior Recruiter",
+        "directPhone": "Direct (215) 383-2575",
+        "cellPhone": "",
+        "email": "cbet@missionstaff.com",
+        "linkedIn": "https://www.linkedin.com/in/christian-bet-089a38a4/"
+    },
+    {
+        "companyShortName": "Template",
+        "agentName": "Cassidy Moyer",
+        "firstName": "Cassidy",
+        "lastName": "Moyer",
+        "title": "Team Lead",
+        "directPhone": "(215) 209-0100",
+        "cellPhone": "unknown",
+        "email": "cassidy.moyer@workbridgeassociates.com",
+        "linkedIn": "https://www.linkedin.com/in/cassidy-moyer/"
+    },
+    {
+        "companyShortName": "JobSpring",
+        "agentName": "Tiffany Ramirez",
+        "firstName": "Tiffany",
+        "lastName": "Ramirez",
+        "title": "Talent Advisor",
+        "directPhone": "(267) 765-6100",
+        "cellPhone": "(631) 942-7231",
+        "email": "tiffany.ramirez@jobspringpartners.com>",
+        "linkedIn": "https://www.linkedin.com/in/tiffany-ramirez-707500120/"
+    },
+    {
+        "companyShortName": "Template",
+        "agentName": "",
+        "firstName": "",
+        "lastName": "",
+        "title": "",
+        "directPhone": "",
+        "cellPhone": "",
+        "email": ""
+    },
+    {
+        "companyShortName": "Template",
+        "agentName": "",
+        "firstName": "",
+        "lastName": "",
+        "title": "",
+        "directPhone": "",
+        "cellPhone": "",
+        "email": ""
+    },
+    {
+        "companyShortName": "Template",
+        "agentName": "",
+        "firstName": "",
+        "lastName": "",
+        "title": "",
+        "directPhone": "",
+        "cellPhone": "",
+        "email": ""
+    },
+    {
+        "companyShortName": "Template",
+        "agentName": "",
+        "firstName": "",
+        "lastName": "",
+        "title": "",
+        "directPhone": "",
+        "cellPhone": "",
+        "email": ""
+    },
+    {
+        "companyShortName": "Template",
+        "agentName": "",
+        "firstName": "",
+        "lastName": "",
+        "title": "",
+        "directPhone": "",
+        "cellPhone": "",
+        "email": ""
+    },
+    {
+        "companyShortName": "Template",
+        "agentName": "",
+        "firstName": "",
+        "lastName": "",
+        "title": "",
+        "directPhone": "",
+        "cellPhone": "",
+        "email": ""
+    },
+    {
+        "companyShortName": "Template",
+        "agentName": "",
+        "firstName": "",
+        "lastName": "",
+        "title": "",
+        "directPhone": "",
+        "cellPhone": "",
+        "email": ""
+    },
+    {
+        "companyShortName": "Template",
+        "agentName": "",
+        "firstName": "",
+        "lastName": "",
+        "title": "",
+        "directPhone": "",
+        "cellPhone": "",
+        "email": ""
+    },
+    {
+        "companyShortName": "Template",
+        "agentName": "",
+        "firstName": "",
+        "lastName": "",
+        "title": "",
+        "directPhone": "",
+        "cellPhone": "",
+        "email": ""
+    },
+    {
+        "companyShortName": "Template",
+        "agentName": "",
+        "firstName": "",
+        "lastName": "",
+        "title": "",
+        "directPhone": "",
+        "cellPhone": "",
+        "email": ""
+    },
+    {
+        "companyShortName": "Template",
+        "agentName": "",
+        "firstName": "",
+        "lastName": "",
+        "title": "",
+        "directPhone": "",
+        "cellPhone": "",
+        "email": ""
+    },
+    {
+        "companyShortName": "Template",
+        "agentName": "",
+        "firstName": "",
+        "lastName": "",
+        "title": "",
+        "directPhone": "",
+        "cellPhone": "",
+        "email": ""
+    },
+    {
+        "companyShortName": "Template",
+        "agentName": "",
+        "firstName": "",
+        "lastName": "",
+        "title": "",
+        "directPhone": "",
+        "cellPhone": "",
+        "email": ""
+    }
+]

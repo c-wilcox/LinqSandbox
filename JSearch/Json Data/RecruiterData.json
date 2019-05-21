@@ -1,0 +1,69 @@
+﻿// Recruitment Company Data
+// Name, Address, Web Address, Main Phone, Contact Info etc.
+[
+    {
+        "companyShortName": "3 Screen",
+        "companyFullName": "Triple Screen Search-Staffing",
+        "phone": " (610) 269-6500",
+        "address": "100 Matsonford Rd Building 3, Suite 310, Radnor, PA 19087",
+        "web": "https://www.teksystems.com/en"
+    },
+    {
+        "companyShortName": "TEKsystems",
+        "companyFullName": "TEKsystems, Inc.",
+        "phone": " (610) 269-6500",
+        "address": "100 Matsonford Rd Building 3, Suite 310, Radnor, PA 19087",
+        "web": "https://www.teksystems.com/en"
+    },
+    {
+        "companyShortName": "MissionStaff",
+        "companyFullName": "MissionStaff",
+        "phone": "(215) 545-1600",
+        "address": "Two Logan Square ; 100 N. 18th St. ; Suite 550 ;Philadelphia, PA 19103",
+        "web": "https://www.MissionStaff.com"
+    },
+    {
+        "companyShortName": "Workbridge",
+        "companyFullName": "Workbridge Associates",
+        "phone": " (215) 209-0100",
+        "address": "1 S Broad St #2200, Philadelphia, PA 19107",
+        "web": "workbridgeassociates.com",
+        "notes": "Workbridge and Jobspring are pretty much the same thing; Both are part of the Motion Recruitment network."
+    },
+    {
+        "companyShortName": "Jobspring",
+        "companyFullName": "Jobspring Partners",
+        "phone": " (215) 209-0100",
+        "address": "One S Broad St Suite #2230, Philadelphia, PA 19107",
+        "web": "jobspringpartners.com",
+        "notes": "Jobspring and Workbridge are pretty much the same thing; Both are part of the Motion Recruitment network."
+    },
+    {
+        "companyShortName": "Motion Recruitment",
+        "companyFullName": "Motion Recruitment Network",
+        "phone": "",
+        "address": "",
+        "web": ""
+    },
+    {
+        "companyShortName": "Template",
+        "companyFullName": "",
+        "phone": "",
+        "address": "",
+        "web": ""
+    },
+    {
+        "companyShortName": "Template",
+        "companyFullName": "",
+        "phone": "",
+        "address": "",
+        "web": ""
+    },
+    {
+        "companyShortName": "Template",
+        "companyFullName": "",
+        "phone": "",
+        "address": "",
+        "web": ""
+    }
+]

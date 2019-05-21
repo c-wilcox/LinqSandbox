@@ -7,6 +7,8 @@
     {
         "companyShortName": "BankMobile",
         "companyLongName": "BankMobile",
+        "recruiterAgent": "Christian Bet",
+        "recruiterCompany": "MissionStaff", 
         "contacts": [
             {
                 "name": "Niko Zurita",

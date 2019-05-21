@@ -6,7 +6,7 @@ using DataSources;
 
 namespace MainConsole
 {
-    class Program
+    class MainConsole
     {
 
         static void Main()

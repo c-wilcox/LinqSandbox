@@ -25,13 +25,8 @@
       <groundspeak:terrain>1.5</groundspeak:terrain>
       <groundspeak:country>United States</groundspeak:country>
       <groundspeak:state>Pennsylvania</groundspeak:state>
-      <groundspeak:short_description html="True">
-</groundspeak:short_description>
-      <groundspeak:long_description html="True">&lt;p&gt;Another in the series; you should kinda' know what ye'r looking for but there's a minor, unique, twist.&lt;/p&gt;
-&lt;p&gt;Hope y'all enjoy.&lt;/p&gt;
-&lt;p&gt; &lt;/p&gt;
-
-</groundspeak:long_description>
+      <groundspeak:short_description html="True"></groundspeak:short_description>
+      <groundspeak:long_description html="True">&lt;p&gt;Another in the series; you should kinda' know what ye'r looking for but there's a minor, unique, twist.&lt;/p&gt;&lt;p&gt;Hope y'all enjoy.&lt;/p&gt;&lt;p&gt; &lt;/p&gt;</groundspeak:long_description>
       <groundspeak:encoded_hints>
       </groundspeak:encoded_hints>
       <groundspeak:logs>

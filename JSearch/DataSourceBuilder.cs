@@ -6,12 +6,12 @@ namespace DataSources
 {
     public static class DataSourceBuilder
     {
-        public static IEnumerable<JobProspect> GetProspectDataGetTestDataItems()
+        public static IEnumerable<ProspectiveEmployer> GetProspectDataGetTestDataItems()
         {
             int prospectId = 1;
-            var items = new List<JobProspect>();
+            var items = new List<ProspectiveEmployer>();
 
-            var item = new JobProspect
+            var item = new ProspectiveEmployer
             {
                 ProspectId = prospectId++,
                 CompanyName = "SofterWare",
@@ -23,7 +23,7 @@ namespace DataSources
             };
             items.Add(item);
 
-            item = new JobProspect()
+            item = new ProspectiveEmployer()
             {
                 ProspectId = prospectId++,
                 CompanyName = "Bank Mobile",
@@ -40,7 +40,7 @@ namespace DataSources
             };
             items.Add(item);
    
-            item = new JobProspect()
+            item = new ProspectiveEmployer()
             {
                 ProspectId = prospectId++,
                 CompanyName = "",

@@ -10,12 +10,9 @@ namespace GeocachingGPXProcessor
     {
         public static IEnumerable<XElement> LoadWaypoints(string fullPath)
         {
-            XDocument doc = XDocument.Load(fullPath);
+            XElement gpxRoot = XElement.Load(fullPath);
 
-            var mainNode = (XElement)doc.FirstNode;
-            IEnumerable<XElement> wayPoints = from node in mainNode.Nodes()
-                where ((XElement) node).Name.LocalName.Equals("wpt")
-                select (XElement)node;
+            IEnumerable<XElement> wayPoints = gpxRoot.Elements();
 
             return wayPoints;
         }

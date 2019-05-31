@@ -59,34 +59,4 @@ namespace DataSources
             return prospectiveEmployerInteractions;
         }
     }
-
-
-    public class Recruiter
-    {
-        public string CompanyShortName { get; set; }
-    }
-
-
-    public class RecruiterAgent
-    {
-        public string CompanyShortName { get; set; }
-    }
-
-
-    public class RecruiterInteraction
-    {
-        public string CompanyShortName { get; set; }
-    }
-
-
-    public class ProspectiveEmployer
-    {
-        public string CompanyShortName { get; set; }
-    }
-
-
-    public class ProspectiveEmployerInteraction
-    {
-        public string CompanyShortName { get; set; }
-    }
 }
